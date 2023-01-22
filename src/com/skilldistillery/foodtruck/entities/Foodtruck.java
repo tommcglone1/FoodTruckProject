@@ -6,10 +6,12 @@ public class Foodtruck {
 	private String foodTruckName;
 	private String foodType;
 	private int numericRating;
-
+	
+	
 	public Foodtruck() {
 		id = nextTruckId;
 		nextTruckId++;
+		
 	}
 
 
@@ -19,7 +21,8 @@ public class Foodtruck {
 		this.foodTruckName = foodTruckName;
 		this.foodType = foodType;
 		this.numericRating = numericRating;
-
+		
+		
 	}
 
 	public int getId() {
@@ -52,8 +55,10 @@ public class Foodtruck {
 
 	@Override
 	public String toString() {
-		return "Foodtruck [id=" + id + ", foodTruckName=" + foodTruckName + ", foodType=" + foodType
-				+ ", numericRating=" + numericRating + "]";
+		return "[id= " + id + ", foodTruckName= " + foodTruckName + ", foodType= " + foodType
+				+ ", numericRating= " + numericRating + "]";
 	}
+	
+
 
 }
